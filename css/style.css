@@ -3,6 +3,48 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0VBR0ksU0FBUztFQUNULFVBQVU7RUFDVixzQkFBc0I7QUNDMUIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.navigation {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navigation span {
+  font-size: 50px;
+  line-height: 50px;
+  color: #FED136;
+  font-family: "Ephesis", sans-serif;
+}
+
+.navigation ul {
+  line-height: 50px;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
