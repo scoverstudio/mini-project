@@ -36,7 +36,7 @@ section {
     justify-content: space-between;
     padding: 50px 125px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
 
 
     span {
@@ -63,3 +63,70 @@ section {
     }
 }
 
+// hero
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    max-width: 1920px;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-inner {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%);
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+
+        h1 {
+            font-size: 54px;
+            font-family: serif;
+            width: 100%;
+            letter-spacing: 1px;
+            font-weight: 300;
+            color: $color-light;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 78px;
+            font-family: $font-one;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $color-light;
+            margin-bottom: 50px;
+        }
+
+        button {
+            padding: 20px 60px;
+            background-color: $color-one;
+            color: $color-light;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
