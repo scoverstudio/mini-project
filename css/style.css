@@ -11,18 +11,25 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+section {
+  padding: 96px;
+  margin: 0 auto;
+}
+
 .navigation {
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px;
+  padding: 50px 125px;
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
 }
 
 .navigation span {
@@ -44,7 +51,32 @@ html {
 .navigation ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+  z-index: -1;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

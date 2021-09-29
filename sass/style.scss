@@ -1,5 +1,6 @@
 // variables
 $color-light: #fff;
+$color-dark: #000;
 $color-one: #FED136;
 $font-one: 'Roboto',
 sans-serif;
@@ -20,16 +21,23 @@ html {
     font-family: $font-one;
 }
 
+section {
+    padding: 96px;
+    margin: 0 auto;
+}
+
 // navigation
 
 .navigation {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 50px 125px;
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
+
 
     span {
         font-size: 50px;
@@ -48,9 +56,10 @@ html {
             a {
                 text-decoration: none;
                 font-size: 20px;
-                color: black;
+                color: $color-light;
                 text-transform: uppercase;
             }
         }
     }
 }
+
