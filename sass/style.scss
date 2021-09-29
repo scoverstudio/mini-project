@@ -321,7 +321,7 @@ section {
     .footer {
         position: relative;
         padding: 30px;
-        height: 20vh;
+        height: 25vh;
         width: 100%;
         max-width: 1400px;
         margin: 0 auto;
@@ -329,6 +329,10 @@ section {
         .icons {
             width: 100%;
             top: 70%;
+            text-align: center;
+        }
+
+        p {
             text-align: center;
         }
 
