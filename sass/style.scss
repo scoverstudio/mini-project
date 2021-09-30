@@ -45,8 +45,6 @@ section {
 
 .navigation {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     padding: 50px 125px;
@@ -269,7 +267,25 @@ section {
     }
 
     .navigation {
-        display: none;
+        display: block;
+        padding: 0;
+        span {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding:15px 0;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                width: 33.3%;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
     }
 
     .hero {
