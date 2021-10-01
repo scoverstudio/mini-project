@@ -83,14 +83,15 @@ section {
 }
 
 // hero
+
 .hero {
     position: relative;
     width: 100%;
     height: 90vh;
     margin: 0 auto;
     max-width: 100%;
-    z-index: 1;
     background: url(https://cdn.pixabay.com/photo/2014/05/03/00/46/gadgets-336635_1280.jpg) no-repeat center / cover;
+    
     img {
         width: 100%;
         height: 100%;
@@ -104,8 +105,6 @@ section {
         transform: translateY(-40%);
         width: 100%;
         text-align: center;
-        z-index: 1;
-
 
         h1 {
             font-size: 54px;
@@ -139,23 +138,26 @@ section {
             font-size: 18px;
             cursor: pointer;
             transition: all 0.5s;
-        }
-        button:hover {
-            background-color: $color-light;
-            color: $color-one;
-        }
+
+            &:hover {
+                background-color: $color-light;
+                color: $color-one;
+            }
+        } 
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
     }
 }
 
-.hero:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-}
+
 
 // services
 
@@ -218,6 +220,7 @@ section {
                     object-fit: cover;
                     transition: all 1s;
                 }
+
                 img:hover {
                     transform: scale(0.90);
                 }
@@ -283,17 +286,20 @@ section {
     .navigation {
         display: block;
         padding: 0;
+
         span {
             display: inline-block;
             width: 100%;
             text-align: center;
             padding:15px 0;
         }
+
         ul{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+
             li{
                 width: 33.3%;
                 margin-left: 0;
@@ -306,6 +312,7 @@ section {
         height: 100vh;
 
         .hero-inner {
+
             h1 {
                 font-size: 30px;
 
@@ -318,6 +325,7 @@ section {
     }
 
     .services {
+
         .cards {
             display: flex;
             flex-direction: column;
@@ -334,6 +342,7 @@ section {
     }
 
     .our-portfolio {
+
         .page-subtitle {
             font-size: 35px;
             margin-bottom: 10px;
